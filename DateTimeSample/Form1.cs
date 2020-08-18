@@ -97,11 +97,14 @@ namespace DateTimeSample
 #endif
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btAns_Click(object sender, EventArgs e)
         {
             _now = DateTime.Now;
 
-            var day = new DateTime((int)nudYear.Value, (int)nudMonth.Value, (int)nudDay.Value);
+            var birth = mcBirthDay.SelectionRange.Start.ToShortDateString();
+            var items = birth.Split('/');
+
+            var day = new DateTime(int.Parse(items[0]), int.Parse(items[1]), int.Parse(items[2]));
 
             int interval = (int)(_now - day).TotalDays;
 

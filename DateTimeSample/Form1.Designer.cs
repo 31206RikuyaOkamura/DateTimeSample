@@ -39,23 +39,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbLeapYear = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.nudMonth = new System.Windows.Forms.NumericUpDown();
-            this.nudDay = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.nudYear = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btAns = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.tbAns = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mcBirthDay = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.nudDayBeforeAfter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonthBeforeAfter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMonth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,129 +154,22 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "閏年判定";
             // 
-            // label5
+            // btAns
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(79, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 33);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "西暦";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(282, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 33);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "年";
-            // 
-            // nudMonth
-            // 
-            this.nudMonth.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nudMonth.Location = new System.Drawing.Point(351, 34);
-            this.nudMonth.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.nudMonth.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudMonth.Name = "nudMonth";
-            this.nudMonth.Size = new System.Drawing.Size(78, 39);
-            this.nudMonth.TabIndex = 2;
-            this.nudMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudMonth.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // nudDay
-            // 
-            this.nudDay.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nudDay.Location = new System.Drawing.Point(506, 34);
-            this.nudDay.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.nudDay.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudDay.Name = "nudDay";
-            this.nudDay.Size = new System.Drawing.Size(78, 39);
-            this.nudDay.TabIndex = 2;
-            this.nudDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudDay.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(435, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 33);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "月";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(590, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 33);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "日";
-            // 
-            // nudYear
-            // 
-            this.nudYear.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nudYear.Location = new System.Drawing.Point(165, 34);
-            this.nudYear.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.nudYear.Name = "nudYear";
-            this.nudYear.Size = new System.Drawing.Size(111, 39);
-            this.nudYear.TabIndex = 2;
-            this.nudYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudYear.Value = new decimal(new int[] {
-            2000,
-            0,
-            0,
-            0});
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(8, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "日数計算";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btAns.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btAns.Location = new System.Drawing.Point(219, 30);
+            this.btAns.Name = "btAns";
+            this.btAns.Size = new System.Drawing.Size(186, 86);
+            this.btAns.TabIndex = 0;
+            this.btAns.Text = "日数計算";
+            this.btAns.UseVisualStyleBackColor = true;
+            this.btAns.Click += new System.EventHandler(this.btAns_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label9.Location = new System.Drawing.Point(159, 104);
+            this.label9.Location = new System.Drawing.Point(219, 159);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 33);
             this.label9.TabIndex = 3;
@@ -294,7 +178,7 @@
             // tbAns
             // 
             this.tbAns.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.tbAns.Location = new System.Drawing.Point(337, 101);
+            this.tbAns.Location = new System.Drawing.Point(397, 156);
             this.tbAns.Name = "tbAns";
             this.tbAns.Size = new System.Drawing.Size(181, 39);
             this.tbAns.TabIndex = 1;
@@ -304,7 +188,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label10.Location = new System.Drawing.Point(524, 104);
+            this.label10.Location = new System.Drawing.Point(584, 159);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(153, 33);
             this.label10.TabIndex = 3;
@@ -313,24 +197,28 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.mcBirthDay);
+            this.groupBox1.Controls.Add(this.btAns);
             this.groupBox1.Controls.Add(this.tbAns);
-            this.groupBox1.Controls.Add(this.nudYear);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.nudMonth);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.nudDay);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 418);
+            this.groupBox1.Location = new System.Drawing.Point(16, 396);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 170);
+            this.groupBox1.Size = new System.Drawing.Size(758, 208);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "誕生日";
+            // 
+            // mcBirthDay
+            // 
+            this.mcBirthDay.Location = new System.Drawing.Point(8, 30);
+            this.mcBirthDay.MaxSelectionCount = 1;
+            this.mcBirthDay.Name = "mcBirthDay";
+            this.mcBirthDay.ShowToday = false;
+            this.mcBirthDay.ShowTodayCircle = false;
+            this.mcBirthDay.TabIndex = 6;
+            this.mcBirthDay.TodayDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // Form1
             // 
@@ -353,9 +241,6 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.nudDayBeforeAfter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonthBeforeAfter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMonth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -376,18 +261,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbLeapYear;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown nudMonth;
-        private System.Windows.Forms.NumericUpDown nudDay;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.NumericUpDown nudYear;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btAns;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbAns;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.MonthCalendar mcBirthDay;
     }
 }
 
